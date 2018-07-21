@@ -149,6 +149,8 @@ BOOST_UNITS_DEFINE_SINGLE_UNIT_SYSTEM(imperial,gallon,volume)
 
 #include <boost/units/base_units/metric/liter.hpp>
 
+#include <boost/units/base_units/metric/electronvolt.hpp>
+
 #include <boost/units/base_units/metric/atmosphere.hpp>
 #include <boost/units/base_units/metric/bar.hpp>
 #include <boost/units/base_units/metric/mmHg.hpp>
@@ -742,7 +744,12 @@ int main(void)
         
         std::cout << mv1 << " = " << quantity<si::volume>(mv1) << std::endl
                   << std::endl;
-        
+
+        quantity<electronvolt_energy>    me1(1.0*electronvolts);
+
+        std::cout << me1 << " = " << quantity<si::energy>(me1) << std::endl
+                  << std::endl;
+
         quantity<mmHg_pressure>            mp1(1.0*mmHgs);
         quantity<torr_pressure>            mp2(1.0*torrs);
         quantity<bar_pressure>            mp3(1.0*bars);
