@@ -27,7 +27,7 @@ namespace au {
 struct energy_base_unit : public base_unit<energy_base_unit, energy_dimension, 99999>
 {
     static std::string name()   { return("au (energy)"); }
-    static std::string symbol() { return("au"); }
+    static std::string symbol() { return("Eh"); }
 };
 
 } // namespace au

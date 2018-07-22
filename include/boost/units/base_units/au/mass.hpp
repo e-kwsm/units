@@ -27,7 +27,7 @@ namespace au {
 struct mass_base_unit : public base_unit<mass_base_unit, mass_dimension, 99999>
 {
     static std::string name()   { return("au (mass)"); }
-    static std::string symbol() { return("au"); }
+    static std::string symbol() { return("me"); }
 };
 
 } // namespace au

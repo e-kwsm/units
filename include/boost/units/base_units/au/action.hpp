@@ -26,7 +26,7 @@ namespace au {
 struct action_base_unit : public base_unit<action_base_unit, action_dimension, 99999>
 {
     static std::string name()   { return("au (action)"); }
-    static std::string symbol() { return("au"); }
+    static std::string symbol() { return("hbar"); }
 };
 
 } // namespace au

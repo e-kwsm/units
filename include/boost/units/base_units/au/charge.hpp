@@ -27,7 +27,7 @@ namespace au {
 struct charge_base_unit : public base_unit<charge_base_unit, charge_dimension, 99999>
 {
     static std::string name()   { return("au (charge)"); }
-    static std::string symbol() { return("au"); }
+    static std::string symbol() { return("e"); }
 };
 
 } // namespace au

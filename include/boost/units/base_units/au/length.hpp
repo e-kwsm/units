@@ -27,7 +27,7 @@ namespace au {
 struct length_base_unit : public base_unit<length_base_unit, length_dimension, 99999>
 {
     static std::string name()   { return("au (length)"); }
-    static std::string symbol() { return("au"); }
+    static std::string symbol() { return("a0"); }
 };
 
 } // namespace au
