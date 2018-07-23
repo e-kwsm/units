@@ -22,9 +22,7 @@
 #include <boost/units/base_units/au/charge.hpp>
 #include <boost/units/base_units/au/length.hpp>
 #include <boost/units/base_units/au/mass.hpp>
-//#include <boost/units/base_units/si/candela.hpp>
-//#include <boost/units/base_units/angle/radian.hpp>
-//#include <boost/units/base_units/angle/steradian.hpp>
+#include <boost/units/dimensionless_unit.hpp>
 
 namespace boost {
 
@@ -40,7 +38,7 @@ typedef make_system<action_base_unit,
                     mass_base_unit>::type system;
 
 /// dimensionless au unit
-//typedef unit<dimensionless_type,system> dimensionless;
+typedef unit<dimensionless_type,system> dimensionless;
 
 } // namespace au
 
