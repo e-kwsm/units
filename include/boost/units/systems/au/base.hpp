@@ -34,12 +34,11 @@ namespace units {
 namespace au {
 
 /// placeholder class defining atomic unit system
-typedef make_system<length_base_unit,
-                    mass_base_unit,
-                    time_base_unit,
-                    current_base_unit,
-                    temperature_base_unit,
-                    amount_base_unit>::type system;
+typedef make_system<action_base_unit,
+                    charge_base_unit,
+                    energy_base_unit,
+                    length_base_unit,
+                    mass_base_unit>::type system;
 
 /// dimensionless au unit
 //typedef unit<dimensionless_type,system> dimensionless;
