@@ -17,12 +17,11 @@
 #include <boost/units/unit.hpp>
 #include <boost/units/make_system.hpp>
 
-#include <boost/units/base_units/si/meter.hpp>
-#include <boost/units/base_units/si/kilogram.hpp>
-#include <boost/units/base_units/si/second.hpp>
-#include <boost/units/base_units/si/ampere.hpp>
-#include <boost/units/base_units/si/kelvin.hpp>
-#include <boost/units/base_units/si/mole.hpp>
+#include <boost/units/base_units/au/action.hpp>
+#include <boost/units/base_units/au/energy.hpp>
+#include <boost/units/base_units/au/charge.hpp>
+#include <boost/units/base_units/au/length.hpp>
+#include <boost/units/base_units/au/mass.hpp>
 //#include <boost/units/base_units/si/candela.hpp>
 //#include <boost/units/base_units/angle/radian.hpp>
 //#include <boost/units/base_units/angle/steradian.hpp>

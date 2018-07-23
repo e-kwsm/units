@@ -24,7 +24,7 @@ namespace units {
 
 namespace au {
 
-struct mass_base_unit : public base_unit<mass_base_unit, mass_dimension, 99999>
+struct mass_base_unit : public base_unit<mass_base_unit, mass_dimension, 982615427>
 {
     static std::string name()   { return("au (mass)"); }
     static std::string symbol() { return("me"); }
@@ -40,7 +40,7 @@ struct mass_base_unit : public base_unit<mass_base_unit, mass_dimension, 99999>
 
 #include BOOST_TYPEOF_INCREMENT_REGISTRATION_GROUP()
 
-BOOST_TYPEOF_REGISTER_TYPE(boost::units::au::meter_base_unit)
+BOOST_TYPEOF_REGISTER_TYPE(boost::units::au::mass_base_unit)
 
 #endif
 

@@ -23,7 +23,7 @@ namespace units {
 
 namespace au {
 
-struct action_base_unit : public base_unit<action_base_unit, action_dimension, 99999>
+struct action_base_unit : public base_unit<action_base_unit, action_dimension, 123445>
 {
     static std::string name()   { return("au (action)"); }
     static std::string symbol() { return("hbar"); }
@@ -39,7 +39,7 @@ struct action_base_unit : public base_unit<action_base_unit, action_dimension, 9
 
 #include BOOST_TYPEOF_INCREMENT_REGISTRATION_GROUP()
 
-BOOST_TYPEOF_REGISTER_TYPE(boost::units::au::meter_base_unit)
+BOOST_TYPEOF_REGISTER_TYPE(boost::units::au::action_base_unit)
 
 #endif
 

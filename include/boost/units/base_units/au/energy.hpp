@@ -24,7 +24,7 @@ namespace units {
 
 namespace au {
 
-struct energy_base_unit : public base_unit<energy_base_unit, energy_dimension, 99999>
+struct energy_base_unit : public base_unit<energy_base_unit, energy_dimension, 27651938>
 {
     static std::string name()   { return("au (energy)"); }
     static std::string symbol() { return("Eh"); }
@@ -40,7 +40,7 @@ struct energy_base_unit : public base_unit<energy_base_unit, energy_dimension, 9
 
 #include BOOST_TYPEOF_INCREMENT_REGISTRATION_GROUP()
 
-BOOST_TYPEOF_REGISTER_TYPE(boost::units::au::meter_base_unit)
+BOOST_TYPEOF_REGISTER_TYPE(boost::units::au::energy_base_unit)
 
 #endif
 

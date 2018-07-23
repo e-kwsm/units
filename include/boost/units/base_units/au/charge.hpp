@@ -24,7 +24,7 @@ namespace units {
 
 namespace au {
 
-struct charge_base_unit : public base_unit<charge_base_unit, charge_dimension, 99999>
+struct charge_base_unit : public base_unit<charge_base_unit, charge_dimension, 98752442>
 {
     static std::string name()   { return("au (charge)"); }
     static std::string symbol() { return("e"); }
@@ -40,7 +40,7 @@ struct charge_base_unit : public base_unit<charge_base_unit, charge_dimension, 9
 
 #include BOOST_TYPEOF_INCREMENT_REGISTRATION_GROUP()
 
-BOOST_TYPEOF_REGISTER_TYPE(boost::units::au::meter_base_unit)
+BOOST_TYPEOF_REGISTER_TYPE(boost::units::au::charge_base_unit)
 
 #endif
 

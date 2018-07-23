@@ -24,7 +24,7 @@ namespace units {
 
 namespace au {
 
-struct length_base_unit : public base_unit<length_base_unit, length_dimension, 99999>
+struct length_base_unit : public base_unit<length_base_unit, length_dimension, 7654223>
 {
     static std::string name()   { return("au (length)"); }
     static std::string symbol() { return("a0"); }
@@ -40,7 +40,7 @@ struct length_base_unit : public base_unit<length_base_unit, length_dimension, 9
 
 #include BOOST_TYPEOF_INCREMENT_REGISTRATION_GROUP()
 
-BOOST_TYPEOF_REGISTER_TYPE(boost::units::au::meter_base_unit)
+BOOST_TYPEOF_REGISTER_TYPE(boost::units::au::length_base_unit)
 
 #endif
 
