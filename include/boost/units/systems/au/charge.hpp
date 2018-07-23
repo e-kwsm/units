@@ -19,7 +19,7 @@ namespace units {
 
 namespace au {
 
-typedef unit<charge_dimension, au::system> charge;
+typedef unit<electric_charge_dimension, au::system> charge;
 
 BOOST_UNITS_STATIC_CONSTANT(au_charge,charge);
 

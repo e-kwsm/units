@@ -16,7 +16,7 @@
 #include <boost/units/config.hpp>
 #include <boost/units/base_unit.hpp>
 //#include <boost/units/scaled_base_unit.hpp>
-#include <boost/units/physical_dimensions/charge.hpp>
+#include <boost/units/physical_dimensions/electric_charge.hpp>
 
 namespace boost {
 
@@ -24,7 +24,7 @@ namespace units {
 
 namespace au {
 
-struct charge_base_unit : public base_unit<charge_base_unit, charge_dimension, 98752442>
+struct charge_base_unit : public base_unit<charge_base_unit, electric_charge_dimension, 98752442>
 {
     static std::string name()   { return("au (charge)"); }
     static std::string symbol() { return("e"); }
