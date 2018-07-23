@@ -8,8 +8,8 @@
 // accompanying file LICENSE_1_0.txt or copy at
 // http://www.boost.org/LICENSE_1_0.txt)
 
-#ifndef BOOST_UNITS_AU_METER_BASE_UNIT_HPP
-#define BOOST_UNITS_AU_METER_BASE_UNIT_HPP
+#ifndef BOOST_UNITS_AU_ACTION_BASE_UNIT_HPP
+#define BOOST_UNITS_AU_ACTION_BASE_UNIT_HPP
 
 #include <string>
 
@@ -43,4 +43,4 @@ BOOST_TYPEOF_REGISTER_TYPE(boost::units::au::action_base_unit)
 
 #endif
 
-#endif // BOOST_UNITS_AU_METER_BASE_UNIT_HPP
+#endif // BOOST_UNITS_AU_ACTION_BASE_UNIT_HPP
