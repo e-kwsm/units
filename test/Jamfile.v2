@@ -14,9 +14,9 @@ warning-compilers =
     <toolset>msvc
 ;
 
-project boost/units/test :
+project :
     requirements
-        <implicit-dependency>/boost//headers
+        <library>/boost/units//boost_units
         <toolset>msvc:<asynch-exceptions>on
         $(warning-compilers)\:$(warning-options)
         # This warning comes from the test library.
@@ -43,16 +43,16 @@ run test_conversion.cpp ;
 run test_base_dimension.cpp ;
 run test_absolute.cpp ;
 run test_default_conversion.cpp ;
-run test_cmath.cpp ;
-run test_limits.cpp ;
+run test_cmath.cpp /boost/math//boost_math_tr1 ;
+run test_limits.cpp /boost/math//boost_math_tr1 ;
 run test_custom_unit.cpp ;
 run test_scaled_conversion.cpp ;
-run test_lambda.cpp ;
-run test_sqrt_scaled_unit.cpp ;
+run test_lambda.cpp /boost/lambda//boost_lambda ;
+run test_sqrt_scaled_unit.cpp /boost/math//boost_math_tr1 ;
 run test_scaled_unit.cpp ;
-run test_output.cpp /boost//regex/<warnings-as-errors>off : : : <test-info>always_show_run_output ;
-run test_trig.cpp ;
-run test_information_units.cpp ;
+run test_output.cpp /boost/regex//boost_regex/<warnings-as-errors>off : : : <test-info>always_show_run_output ;
+run test_trig.cpp /boost/math//boost_math_tr1 ;
+run test_information_units.cpp /boost/multiprecision//boost_multiprecision ;
 
 compile-fail fail_implicit_conversion.cpp ;
 compile-fail fail_quantity_construct.cpp ;
