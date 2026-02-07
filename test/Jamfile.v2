@@ -17,7 +17,6 @@ warning-compilers =
 project :
     requirements
         <library>/boost/units//boost_units
-        <toolset>msvc:<asynch-exceptions>on
         $(warning-compilers)\:$(warning-options)
         # This warning comes from the test library.
         <toolset>msvc:<cxxflags>"/wd4701"
