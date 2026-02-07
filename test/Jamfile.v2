@@ -9,19 +9,13 @@
 
 import testing ;
 
-warning-options = <warnings>all <warnings-as-errors>on ;
-warning-compilers =
-    <toolset>msvc
-;
-
 project :
     requirements
         <library>/boost/units//boost_units
-        $(warning-compilers)\:$(warning-options)
-        # This warning comes from the test library.
-        <toolset>msvc:<cxxflags>"/wd4701"
-        # The comes from the exception library
-        <toolset>msvc,<toolset-msvc:version>7.1:<cxxflags>"/wd4800"
+        <warnings>all
+        # boost_math_tr1 emits 4714, and because it's a dependency of boost_units,
+        # those are impossible to squelch
+        #<toolset>msvc:<warnings-as-errors>on
 ;
 
 compile test_predicates.cpp ;
